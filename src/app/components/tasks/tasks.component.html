@@ -1,0 +1,28 @@
+@if (isAddingNewTask()) {
+  <app-new-task-modal-window (close)="onCloseModal()" [userId]="user().id"/>
+}
+
+@if (user()) {
+  <div class="tasks">
+    <header>
+      <h2>{{ user().name }}'s Task</h2>
+
+      <button
+        (click)="showModalWindow()"
+      >Add Task</button>
+    </header>
+
+    <ul>
+      @for (task of selectedUserTasks; track task.id) {
+        <li>
+          <app-task
+            [userTask]="task"
+          ></app-task>
+        </li>
+      } @empty {
+        <div class="no-tasks">No Tasks Yet</div>
+      }
+    </ul>
+  </div>
+}
+

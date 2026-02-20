@@ -1,0 +1,38 @@
+div {
+  padding: 1rem;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+}
+
+h2 {
+  margin: 0;
+}
+
+time {
+  color: #9d009d;
+}
+
+.actions {
+  text-align: right;
+  margin: 0;
+}
+
+.actions button {
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background-color: #ff0000;
+  color: white;
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: #e70000;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+}

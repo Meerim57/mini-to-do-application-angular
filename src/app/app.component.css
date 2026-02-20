@@ -1,0 +1,46 @@
+div {
+  margin: 0 8rem;
+}
+
+main {
+  display: flex;
+  gap: 2rem;
+}
+
+.users {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 0.3rem;
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  div {
+    margin: 0 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .users {
+    flex-direction: row;
+  }
+
+  .users {
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 0.2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  div {
+    margin: 0 1rem;
+  }
+}

@@ -1,0 +1,53 @@
+:host {
+  width: 100%;
+}
+
+.tasks {
+  padding: 1.2rem;
+  border-radius: 10px;
+  background-color: #0b5308;
+}
+
+.no-tasks {
+  text-align: center;
+  color: #1cdb15;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin: 0;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+button {
+  cursor: pointer;
+  background-color: #d3d300;
+  font-weight: 500;
+  border-radius: 5px;
+  border: none;
+  padding: .4rem 1rem;
+  font-size: 0.9rem;
+}
+
+button:hover,
+button:active {
+  background-color: #caca00
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}

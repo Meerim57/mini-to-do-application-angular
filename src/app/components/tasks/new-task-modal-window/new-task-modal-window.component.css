@@ -1,0 +1,80 @@
+dialog {
+  width: 90%;
+  max-width: 30rem;
+  background-color: #0b5308;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  top: 5rem;
+  color: #fff;
+}
+
+h2 {
+  margin: 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: .2rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: .5rem .25rem;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background-color: #dedede;
+}
+
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: .5rem 1.5rem;
+  border-radius: 4px;
+  background-color: transparent;
+  font-weight: 500;
+}
+
+button[type="button"] {
+  color: #fff;
+}
+
+button[type="button"]:hover,
+button[type="button"]:active {
+  color: #dfdfdf;
+}
+
+button[type="submit"] {
+  background-color: #d3d300;
+  color: #000000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:active {
+  background-color: #e3e300;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+.actions {
+  margin: 1.2rem 0 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: .25rem;
+}
+
+.background {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
